@@ -1,0 +1,1 @@
+/usr/local/bin/pngpaste /tmp/temp.png && /usr/bin/base64 /tmp/temp.png > /tmp/temp.base64 && /usr/bin/curl -d "@/tmp/temp.base64" -H "Content-Type: application/text" https://temp_url/pic/upload/<token> | /usr/bin/pbcopy
